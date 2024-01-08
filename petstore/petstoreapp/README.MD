@@ -4,7 +4,7 @@ You are also welcome and encouraged to build/deploy it outside of the Azure Pet 
 
 Build the Spring Boot Jar and Docker Image
 
-```docker build -t petstoreapp .```
+```docker build -t petstoreapp  .```
 
 Ruun the Docker Image. Note this example instructs Spring Boot to run on any port of your choice, in this case, 8080 and hence forwards the port to the container accordingly. You are welcome to change this as needed.
 
