@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: grtazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grtazurecloud
+  template:
+    metadata:
+      labels:
+        app: grtazurecloud 
+    spec:
+      containers:
+        - name: grtazurecloud 
+          image: grttazurepetstorecr.azurecr.io/grtazurecloud
+          ports:
+          - containerPort: 80
